@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Freshy Bar</title>
+  <link rel="preload" href="./fonts/mulish-v12-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/mulish-v12-cyrillic_latin-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/mulish-v12-cyrillic_latin-900.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
   <script src="./js/script.js"></script>
 </head>
@@ -24,11 +28,153 @@
   <main class="main">
 
     <section class="hero">
-      <div class="container"></div>
+      <div class="container">
+        <h2 class="hero__title">Выбери свой 
+          <span class="text-red">освежающий</span> фреш
+        </h2>
+
+        <div class="hero__caps">
+          <div class="hero__cap hero__cap--pink">
+            <img src="./img/pink.png" alt="Стакан с розовым коктейлем" class="hero__img">
+          </div>
+
+          <div class="hero__cap hero__cap--orange">
+            <img src="./img/green.png" alt="Стакан с зеленым коктейлем" class="hero__img">
+          </div>
+
+          <div class="hero__cap hero__cap--green">
+            <img src="./img/orange.png" alt="Стакан с оранжевым коктейлем" class="hero__img">
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="goods">
-      <div class="container"></div>
+      <div class="container">
+        <h2 class="goods__title">Меню</h2>
+
+        <ul class="goods__list">
+          <li class="goods__item">
+            <artticle class="goods__card cocktail">
+              <img src="./img/cup 1.png" alt="Коктейл собери сам" class="cocktail__img">
+
+              <div class="cocktail__text">
+                <p class="cocktail__title">Собери сам</p>
+                <p class="cocktail__price">260 ₽</p>
+              </div>
+
+              <p class="cocktail__size">300ml</p>
+
+              <button class="btn cocktail__btn">Добавить</button>
+            </artticle>
+          </li>
+
+          <li class="goods__item">
+            <artticle class="goods__card cocktail">
+              <img src="./img/cup 2.png" alt="Коктейл собери сам" class="cocktail__img">
+
+              <div class="cocktail__text">
+                <p class="cocktail__title">Клубника</p>
+                <p class="cocktail__price">270 ₽</p>
+              </div>
+
+              <p class="cocktail__size">300ml</p>
+
+              <button class="btn cocktail__btn">Добавить</button>
+            </artticle>
+          </li>
+
+          <li class="goods__item">
+            <artticle class="goods__card cocktail">
+              <img src="./img/cup 3.png" alt="Коктейл собери сам" class="cocktail__img">
+
+              <div class="cocktail__text">
+                <p class="cocktail__title">Десные ягоды</p>
+                <p class="cocktail__price">280 ₽</p>
+              </div>
+
+              <p class="cocktail__size">300ml</p>
+
+              <button class="btn cocktail__btn">Добавить</button>
+            </artticle>
+          </li>
+
+          <li class="goods__item">
+            <artticle class="goods__card cocktail">
+              <img src="./img/cup 4.png" alt="Коктейл собери сам" class="cocktail__img">
+
+              <div class="cocktail__text">
+                <p class="cocktail__title">Лайм и мята</p>
+                <p class="cocktail__price">260 ₽</p>
+              </div>
+
+              <p class="cocktail__size">300ml</p>
+
+              <button class="btn cocktail__btn">Добавить</button>
+            </artticle>
+          </li>
+
+          <li class="goods__item">
+            <artticle class="goods__card cocktail">
+              <img src="./img/cup 5.png" alt="Коктейл собери сам" class="cocktail__img">
+
+              <div class="cocktail__text">
+                <p class="cocktail__title">Бананы</p>
+                <p class="cocktail__price">260 ₽</p>
+              </div>
+
+              <p class="cocktail__size">300ml</p>
+
+              <button class="btn cocktail__btn">Добавить</button>
+            </artticle>
+          </li>
+
+          <li class="goods__item">
+            <artticle class="goods__card cocktail">
+              <img src="./img/cup 6.png" alt="Коктейл собери сам" class="cocktail__img">
+
+              <div class="cocktail__text">
+                <p class="cocktail__title">Киви и яблоко</p>
+                <p class="cocktail__price">290 ₽</p>
+              </div>
+
+              <p class="cocktail__size">300ml</p>
+
+              <button class="btn cocktail__btn">Добавить</button>
+            </artticle>
+          </li>
+
+          <li class="goods__item">
+            <artticle class="goods__card cocktail">
+              <img src="./img/cup 7.png" alt="Коктейл собери сам" class="cocktail__img">
+
+              <div class="cocktail__text">
+                <p class="cocktail__title">Манго</p>
+                <p class="cocktail__price">380 ₽</p>
+              </div>
+
+              <p class="cocktail__size">300ml</p>
+
+              <button class="btn cocktail__btn">Добавить</button>
+            </artticle>
+          </li>
+
+          <li class="goods__item">
+            <artticle class="goods__card cocktail">
+              <img src="./img/cup 8.png" alt="Коктейл собери сам" class="cocktail__img">
+
+              <div class="cocktail__text">
+                <p class="cocktail__title">Маракуйя</p>
+                <p class="cocktail__price">340 ₽</p>
+              </div>
+
+              <p class="cocktail__size">300ml</p>
+
+              <button class="btn cocktail__btn">Добавить</button>
+            </artticle>
+          </li>
+        </ul>
+      </div>
     </section>
 
   </main>
@@ -44,7 +190,7 @@
         </li>
         <li>
           <span>Developer:</span>
-          <a href="!#">Tatiana Yacoushonok</a>
+          <a href="!#">Tatiana Yakoushonok</a>
         </li>
       </ul>
     </div>

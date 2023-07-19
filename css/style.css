@@ -1,0 +1,70 @@
+/* mulish-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/mulish-v12-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* mulish-600 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/mulish-v12-cyrillic_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* mulish-900 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/mulish-v12-cyrillic_latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.1;
+  background: #f8e8e2 url("../img/bg.svg") no-repeat top/contain;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+p,
+fieldset {
+  margin: 0;
+}
