@@ -25,6 +25,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -276,17 +277,22 @@ fieldset {
 .modal {
   position: fixed;
   inset: 0;
+  display: none;
+  padding: 10px;
   background-color: rgba(0, 0, 0, .5);
+  overflow-y: auto;
+  cursor: pointer;
 }
 
 .modal__main {
   max-width: 780px;
-  height: 100vh;
-  margin: 0 auto;
+  width: 100%;
+  margin: auto;
   padding: 60px 40px;
   border-radius: 24px;
   background: #f8e8e2;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: default;
 }
 
 .modal__title {
