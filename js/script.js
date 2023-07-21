@@ -64,11 +64,6 @@ const modalController = ({ modalElem, btnOpen, btnClose, time = 300 }) => {
   modal.addEventListener('click', closeModal);
 }
 
-modalController({
-  modalElem: '.modal',
-  btnOpen: '.header__btn--order'
-});
-
 // GOODS LIST
 
 const getData = async () => {
@@ -99,6 +94,17 @@ const createCard = (item) => {
 }
 
 const init = async () => {
+
+  modalController({
+    modalElem: '.modal__order',
+    btnOpen: '.header__btn--order',
+  });
+
+  modalController({
+    modalElem: '.modal__make',
+    btnOpen: '.cocktail__btn--make',
+  });
+
   const goodsListElem = document.querySelector('.goods__list');
   const data = await getData();
 
