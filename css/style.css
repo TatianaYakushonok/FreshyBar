@@ -87,6 +87,11 @@ fieldset {
   box-shadow: 0px 4px 20px 0px #fa5a5a;
 }
 
+.btn:disabled {
+  background-color: #c1c1c1;
+  box-shadow: none;
+}
+
 /*=================== HEADER =====================*/
 
 .header {
