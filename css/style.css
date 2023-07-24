@@ -400,7 +400,6 @@ fieldset {
 
 .make__form {
   display: grid;
-  grid-template-columns: repeat(3, minmax(230px, 1fr));
   grid-template-areas:
   "ingredients ingredients ingredients"
   "topping cup ."
@@ -419,7 +418,7 @@ fieldset {
   grid-area: ingredients;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 20px;
+  gap: 20px 30px;
 }
 
 .make__fieldset--topping {
@@ -811,5 +810,46 @@ fieldset {
 
   .modal__form--btn {
     padding: 8px 20px;
+  }
+
+  .modal__main--make {
+    max-width: 320px;
+  }
+
+  .make__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .make__form {
+    grid-template-areas:
+        "ingredients ingredients"
+        "topping ."
+        "cup ."
+        "footer footer";
+  }
+
+  .make__fieldset--ingredients {
+    margin-bottom: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 15px;
+  }
+
+  .make__legend {
+    margin-bottom: 12px;
+  }
+
+  .make__fieldset--topping {
+    margin-bottom: 28px;
+    gap: 12px;
+  }
+
+  .make__fieldset--cup {
+    margin-bottom: 32px;
+    gap: 12px;
+  }
+
+  .make__add--btn {
+    max-width: 136px;
   }
 }
