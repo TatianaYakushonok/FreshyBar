@@ -379,12 +379,6 @@ fieldset {
   border-radius: 8px;
 }
 
-.modal__img--wrap img {
-  max-width: 70px;
-  width: 100%;
-  border-radius: 8px;
-}
-
 .modal__item--cocktail {
   display: flex;
   flex-direction: column;
@@ -436,9 +430,34 @@ fieldset {
   max-width: 340px;
   width: 100%;
   padding: 12px 16px;
+  font-size: 18px;
+  color: #000;
   border-radius: 8px;
-  background: #FFF;
+  background: #fff;
   border: none;
+  outline: none;
+  border: 1px solid transparent;
+  transition: background-color .3s ease-in-out, border .3s ease-in-out;
+}
+
+.modal__form--imput::placeholder {
+  color: #c1c1c1;
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+}
+
+.modal__form--imput:focus::placeholder {
+  opacity: 0;
+}
+
+.modal__form--imput:hover {
+  background-color: #f6f6f6;
+}
+
+.modal__form--imput:active,
+.modal__form--imput:focus {
+  background-color: #fff;
+  border: 1px solid #D5B4A8;
 }
 
 .modal__form--btn {
