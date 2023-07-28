@@ -142,6 +142,11 @@ fieldset {
   position: relative;
   width: 24px;
   height: 24px;
+  transition: transform .3s ease-in-out;
+}
+
+.header__btn--order:hover {
+  transform: scale(1.1);
 }
 
 .header__btn--count {
@@ -426,6 +431,11 @@ fieldset {
   border: none;
 }
 
+.modal__form--label {
+  max-width: 340px;
+  width: 100%;
+}
+
 .modal__form--imput {
   max-width: 340px;
   width: 100%;
@@ -458,6 +468,18 @@ fieldset {
 .modal__form--imput:focus {
   background-color: #fff;
   border: 1px solid #D5B4A8;
+}
+
+.hint {
+  display: block;
+  padding: 5px;
+  font-size: 14px;
+  color: red;
+  opacity: 0;
+}
+
+.modal__form--imput:invalid + .hint {
+  opacity: 1;
 }
 
 .modal__form--btn {

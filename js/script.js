@@ -366,7 +366,7 @@ const renderCart = () => {
   })
 
   modalTotalPrice.textContent = `${orderListData.reduce((acc, item) => acc + +item.price, 0)} ₽`;
-
+  
   modalForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
